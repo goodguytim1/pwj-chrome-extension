@@ -1,17 +1,17 @@
-# TODOS
+# DONE
 
-## TODO(TOGETHER): Set up the Chrome Extension App
+## DONE: Set up the Chrome Extension App
 
-## TODO(TOGETHER): Set up the basic strucrure of the app
+## DONE: Set up the basic strucrure of the app
 
-#### TODO: Create a structure for action item within action-items class
+#### DONE: Create a structure for action item within action-items class
 
 #### HINTS:
 
 - Create a div with a class `actionItem__item` 
 - Duplicate it a few times
 
-## TODO: Create HTML and Style for the header
+## DONE: Create HTML and Style for the header
 
 #### HTML/CSS Structure:
 
@@ -25,9 +25,9 @@
 #### HINTS:
 - Use the `good-morning.png` image
 
-## TODO(TOGETHER): Add circular progress 
+## DONE: Add circular progress 
 
-## TODO: Create HTML and Style for Input 
+## DONE: Create HTML and Style for Input 
 
 #### HTML/CSS Structure:
 
@@ -45,14 +45,14 @@
 - You have to target classes like `input::placeholder` and `input:focus` to rewrite default bootstrap styling
 - You can use **Google** to figure out HOW
 
-## TODO: Create HTML and Style for Quick Action Buttons
+## DONE: Create HTML and Style for Quick Action Buttons
 
 #### HINTS:
 - You have to overwrite bootstrap classes like `.btn-outline-dark` & `.btn-outline-dark:focus` & `.btn-outline-dark:hover` 
 - Use a class `actionInput__suggestions` for the parent container of the buttons inside `.actionInput__inputContainer`
 - Use buttons from [here](https://getbootstrap.com/docs/4.0/components/buttons/)
 
-## TODO: Create HTML and Style for Action Items
+## DONE: Create HTML and Style for Action Items
 
 #### HTML Structure:
 
@@ -73,12 +73,12 @@
 #### HINTS:
 - You need to import `fontawesome.js` that is saved in `packages` folder
 
-## TODO(TOGETHER): Connect the Input to add Action Item to the front end 
+## DONE(TOGETHER): Connect the Input to add Action Item to the front end 
 - Handle form submission
 - Create `renderActionItem()` function
 - Add action item html to the action items list with class `.actionItems`
 
-## TODO: Save the Action Item data in a database
+## DONE: Save the Action Item data in a database
 
 #### HINTS:
 - Save the data in Chrome Sync
@@ -87,7 +87,7 @@
 - Make sure to reload your chrome extension for `manifest.json` to take effect
 - You need to grab the list of action items first and then append the new item
 
-## TODO: Display the list of Action Items from the database
+## DONE: Display the list of Action Items from the database
 
 #### HINTS:
 
@@ -95,18 +95,18 @@
 - Create `renderActionItems()` function
 - Loop through each action item and render it
 
-## TODO(TOGETHER): Clean up the styling
+## DONE(TOGETHER): Clean up the styling
 
 - Clean up spacing and borders
 
-## TODO: Create HTML and Style of the completed action item
+## DONE: Create HTML and Style of the completed action item
 
 #### HINTS:
 - Set the background color of `.actionItem__item` to `#b0f1ab`
 - Set the checkbox color to `#56e452`
 - Add `.completed` class to action item 
 
-## TODO(TOGETHER): Add the ability to mark item completed
+## DONE(TOGETHER): Add the ability to mark item completed
 
 - Create an event listener on the checkmark element
 - Add a class `.completed` to the clicked element
@@ -114,7 +114,7 @@
 - Create a unique id for each element with `uuidv4`
 - Add the ability to unmark it completed as well
 
-## TODO: Add the ability to uncheck a completed item
+## DONE: Add the ability to uncheck a completed item
 
 #### HINTS:
 
@@ -123,20 +123,20 @@
 - If no then we need to add `.completed` class and set it in Chrome Storage
 - Set the current date as completed value
 
-## TODO: Udpate items progress in progressbar
+## DONE: Udpate items progress in progressbar
 
 #### HINTS:
 - Create a `setProgress()` function
 - Calculate the percentage of completed items over total items `completedItems/totalItems`
 - Use `circle.animate` to update the progress bar
 
-## TODO(TOGETHER): Clean up functions and create an ActionItem Class
+## DONE(TOGETHER): Clean up functions and create an ActionItem Class
 - Move the `add()` function
 - Move the `markUnmarkCompleted()` function
 - Move the `setProgress()` function
 - Move the `circle` function to it's own file
 
-## TODO: Add the ability to delete action items
+## DONE: Add the ability to delete action items
 
 #### HINTS:
 - Add an event listener to `.actionItem__delete`
@@ -144,7 +144,7 @@
 - Create a `remove()` function to remove the item from Chrome Storage
 - On hover of the `X` button, chane the color to `#D00000`
 
-## TODO: Add the ability to add Quick Action items
+## DONE: Add the ability to add Quick Action items
 
 #### HINTS:
 - Create an event listener for quick action buttons with a `createQuickActionListener()` function
@@ -152,7 +152,7 @@
 - Add `data-text` attribute to every button as text that will be used for the action item
 - Use the `add()`
 
-## TODO: Capture the link of the site from the curent tab in Chrome
+## DONE: Capture the link of the site from the curent tab in Chrome
 
 #### HINTS:
 - Create a `getCurrentTab()` function to get active tab
@@ -168,7 +168,7 @@ website = {
 ```
 - Make sure to add website data only if `Link site for later` is clicked
 
-## TODO(TOGETHER): Create HTML and Style for "Link site for later"
+## DONE(TOGETHER): Create HTML and Style for "Link site for later"
 
 - Create a `createLinkContainer()` function
 
@@ -183,7 +183,7 @@ website = {
                 span
 ```
 
-## TODO: Show the Link on click of "Link site for later"
+## DONE: Show the Link on click of "Link site for later"
 
 #### HINTS:
 - Create a `createLinkContainer()` function
@@ -191,7 +191,7 @@ website = {
 - Append the link element to action item in `renderActionItem()` function
 - Make sure to check if webiste data exists
 
-## TODO: Create the Update Name modal
+## DONE: Create the Update Name modal
 
 #### HINTS:
 - Use the Bootstrap modal from [here](https://getbootstrap.com/docs/4.0/components/modal/)
@@ -199,7 +199,7 @@ website = {
 - Open dialog on click of the name text
 - Use the `modal-dialog-centered`
 
-## TODO: Finish styling for greeting name
+## DONE: Finish styling for greeting name
 
 #### HINTS:
 - Add a pencil icon next to greeting name `fas fa-pen` within `.greeting__name`
@@ -207,7 +207,7 @@ website = {
 - Show the pencil icon only on hover of `.greeting__name`
 - Font size for pencil icon is `font-size: 0.8em;`
 
-## TODO: Save the name from modal input
+## DONE: Save the name from modal input
 
 #### HINTS:
 - Create a `createUpdateNameListener()` for when `Save Changes` is clicked
@@ -216,7 +216,7 @@ website = {
 - Create a `setUsersName()` function to change the name text in `.name__value`
 - Remember to set the user's name when when opening Chrome Extension
 
-## TODO: Set the greeting depending on time of day
+## DONE: Set the greeting depending on time of day
 
 #### HINTS:
 - Create a `setGreeting()` function
@@ -226,20 +226,20 @@ website = {
 - Time: 17 - 20 -> Good Evening
 - Time: 20 - 5 -> Good Night
 
-## TODO: Set the greeting image based on time of day
+## DONE: Set the greeting image based on time of day
 
 #### HINTS:
 - Create a `setGreetingImage()` function
 - Set image based on type of the day
 
-## TODO: Add a browser badge to show number of action items
+## DONE: Add a browser badge to show number of action items
 
 #### HINTS:
 - Create a `setBrowserBadge()` function
 - Figure out how to set the badge in chrome
 - Call the `setBrowserBadge()` when setting the progress
 
-## TODO: Create a right click context menu for adding an action item
+## DONE: Create a right click context menu for adding an action item
 
 #### HINTS:
 - Create a `background.js` file
@@ -248,7 +248,7 @@ website = {
 - Add the quick action item
 - Make sure to update the badge after adding the item
 
-## TODO: Filter old completed action items 
+## DONE: Filter old completed action items 
 
 #### HINTS:
 - Create a `filterActionItems()` function
@@ -257,7 +257,7 @@ website = {
 - Current date is today midnight
 - Make sure to filter action items before rendering them
 
-## TODO(TOGETHER): Clean up
+## DONE(TOGETHER): Clean up
 
 - Set progrss to `0` if there are 0 completed items
 - Add transition for `checkmark`
@@ -265,20 +265,20 @@ website = {
 - Provide padding for the update name modal
 - Make sure progress bar works with 0 completed items
 
-## TODO: Initialize action items on installation of the extension
+## DONE: Initialize action items on installation of the extension
 
 #### HINTS
 - Add functionality inside `background.js`
 - Use `chrome.runtime.onInstalled` function
 - Set action items in Chrome Storage to `[]`
 
-## TODO(TOGETHER): Add an EPIC animation for when adding a new action item
+## DONE(TOGETHER): Add an EPIC animation for when adding a new action item
 - Create an `animateDown()` function 
 - Animate from `opacity: 0` to `opacity: 1`
 - Animate the full height of element
 - Call the funcation after rendering it
 
-## TODO: Add an EPIC animation for when deleting an action item
+## DONE: Add an EPIC animation for when deleting an action item
 
 #### HINTS:
 - Create an `animateUp()` function where we will animate the action item when deleting it
@@ -287,11 +287,9 @@ website = {
 - Animate to `marginTop: -${height}px`
 - Upon completion of the animation remove the element fully
 
-## TODO(TOGETHER): Add an EPIC animation for marking an action item completed
+## DONE(TOGETHER): Add an EPIC animation for marking an action item completed
 
-## TODO: Upload the extension to Chrome Web Store
-
-We are DONE! LET'S GOOOOOOO!
+## DONE: Upload the extension to Chrome Web Store
 
 
 
